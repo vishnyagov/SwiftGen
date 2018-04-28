@@ -28,7 +28,10 @@ class InterfaceBuilderTests: XCTestCase {
         suffix: ""),
 
       // test: enumName parameter
-      (context: try StencilContext.enrich(context: context, parameters: ["enumName=XCTStoryboardCustom"]),
+      (context: try StencilContext.enrich(
+        context: context,
+        parameters: ["enumName=XCTStoryboardCustom", "unnamedSegueCaseName=customUnnamedSegue"]
+       ),
        suffix: "-customName"),
 
       // test: module parameter and PRODUCT_MODULE_NAME
