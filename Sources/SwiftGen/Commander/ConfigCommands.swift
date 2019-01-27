@@ -54,7 +54,7 @@ extension ConfigEntry {
       logMessage(.warning, msg)
     }
     let filter = try Filter(pattern: self.filter ?? parserCommand.parserType.defaultFilter)
-    try parser.searchAndParse(paths: inputs, filter: filter)
+    parser.searchAndParse(paths: inputs, filter: filter)
     let context = parser.stencilContext()
 
     for entryOutput in outputs {

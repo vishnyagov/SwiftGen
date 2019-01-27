@@ -25,23 +25,31 @@ public protocol Parser {
 }
 
 public extension Parser {
-  func searchAndParse(paths: [Path], filter: Filter) throws {
+  func searchAndParse(paths: [Path], filter: Filter) {
     for path in paths {
-      try searchAndParse(path: path, filter: filter)
+      searchAndParse(path: path, filter: filter)
     }
   }
 
-  func searchAndParse(path: Path, filter: Filter) throws {
+  func searchAndParse(path: Path, filter: Filter) {
     if path.matches(filter: filter) {
       let parentDir = path.absolute().parent()
-      try parse(path: path, relativeTo: parentDir)
+      tryAndParse(path: path, relativeTo: parentDir)
     } else {
       let dirChildren = path.iterateChildren(options: [.skipsHiddenFiles, .skipsPackageDescendants])
       let parentDir = path.absolute()
 
       for path in dirChildren where path.matches(filter: filter) {
-        try parse(path: path, relativeTo: parentDir)
+        tryAndParse(path: path, relativeTo: parentDir)
       }
+    }
+  }
+
+  private func tryAndParse(path: Path, relativeTo parent: Path) {
+    do {
+      try parse(path: path, relativeTo: parent)
+    } catch {
+      self.warningHandler?("error: \(error)", #file, #line)
     }
   }
 }

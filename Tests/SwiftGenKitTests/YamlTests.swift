@@ -60,7 +60,7 @@ class YamlTests: XCTestCase {
     do {
       let parser = Yaml.Parser()
       let filter = try Filter(pattern: "[^/]*\\.(json|ya?ml)$")
-      try parser.searchAndParse(path: Fixtures.directory(sub: .yamlGood), filter: filter)
+      parser.searchAndParse(path: Fixtures.directory(sub: .yamlGood), filter: filter)
 
       let result = parser.stencilContext()
       XCTDiffContexts(result, expected: "all", sub: .yaml)
@@ -72,9 +72,7 @@ class YamlTests: XCTestCase {
   func testFileWithBadSyntax() {
     do {
       _ = try Yaml.Parser().searchAndParse(path: Fixtures.path(for: "syntax.yaml", sub: .yamlBad))
-      XCTFail("Code did parse file successfully while it was expected to fail for bad syntax")
-    } catch Yaml.ParserError.invalidFile {
-      // That's the expected exception we want to happen
+      // The parser won't fail for unknown exceptions (it'll log it)
     } catch let error {
       XCTFail("Unexpected error occured while parsing: \(error)")
     }

@@ -55,9 +55,7 @@ class PlistTests: XCTestCase {
   func testFileWithBadSyntax() {
     do {
       _ = try Plist.Parser().searchAndParse(path: Fixtures.path(for: "syntax.plist", sub: .plistBad))
-      XCTFail("Code did parse file successfully while it was expected to fail for bad syntax")
-    } catch Plist.ParserError.invalidFile {
-      // That's the expected exception we want to happen
+      // The parser won't fail for unknown exceptions (it'll log it)
     } catch let error {
       XCTFail("Unexpected error occured while parsing: \(error)")
     }

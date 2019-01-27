@@ -68,9 +68,7 @@ class StringsTests: XCTestCase {
 
     do {
       try parser.searchAndParse(path: Fixtures.path(for: "Localizable.strings", sub: .strings))
-      XCTFail("Code did parse file successfully while it was expected to fail for duplicate file")
-    } catch Strings.ParserError.duplicateTable {
-      // That's the expected exception we want to happen
+      // The parser won't fail for unknown exceptions (it'll log it)
     } catch let error {
       XCTFail("Unexpected error occured while parsing: \(error)")
     }
