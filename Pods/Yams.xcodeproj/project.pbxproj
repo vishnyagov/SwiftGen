@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 47;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10D9A27A6FBB587A5BA86A8DDA1DC612 /* scanner.c in Sources */ = {isa = PBXBuildFile; fileRef = B9D70DFD4C0F0E0D63B0ECBBB806E10A /* scanner.c */; };
+		27F714D838B1E5D49839FFE3D3E1DF2D /* reader.c in Sources */ = {isa = PBXBuildFile; fileRef = B61AA40719E55687433EDE5D0BA363F0 /* reader.c */; };
+		2BF147A46E2154FF72E77D9EFF634EDA /* yaml.h in Headers */ = {isa = PBXBuildFile; fileRef = DFA13A453E5BF0FD2049628F87331256 /* yaml.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E30191F911CA312E65EB0A7823F711C /* Yams.h in Headers */ = {isa = PBXBuildFile; fileRef = 70875103C31419EA32ADF9989C37A54F /* Yams.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A198A4E10B1A5CCB6019145945151D1 /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71811A7C4EA77C72C7721ACBF02918D1 /* Resolver.swift */; };
+		56088FADCC6402C0B2E7D4EE16A1DA77 /* yaml_private.h in Headers */ = {isa = PBXBuildFile; fileRef = D97FE6C951C988B5E5E0401A973EF659 /* yaml_private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56EFAE26CDB22BA9C22EF657FF936CE8 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783595E1150E02DB2499BFFADF8F892D /* Parser.swift */; };
+		5A0387211FCFF9664A7B8479F28DE9AB /* Node.Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB264C68C0DC6B5843FCF23F6D32E3D /* Node.Sequence.swift */; };
+		5D3A2C265F2A8F41950B4211E8BDB507 /* Representer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637983B3AA54660C79031369AF110ED9 /* Representer.swift */; };
+		86605A79EA511DD630BB00261967BEBA /* Node.Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC1C42EDD791BEB98297712F719ED40 /* Node.Mapping.swift */; };
+		932A2A30D57A74DE61E0F2461C598DC5 /* String+Yams.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F7D6424B9191612A37D319EC4AF4DA /* String+Yams.swift */; };
+		997163AAD5EC3067FD5A2CE8B1D0BC2E /* YamlError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AA222A97A609C4796307067DCD2465 /* YamlError.swift */; };
+		A773468ABB0B7B3061EF70E854EC33DE /* Constructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56ED6D1986EC19067FD140A35E92A56 /* Constructor.swift */; };
+		AF0CF5EEE59FD66EF93E9BC71F4059AB /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047715FE0FA1CB1FC8E591F9744DB953 /* Node.swift */; };
+		AF24493CB602373846F4580D3555598C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9534D4AC6D0E25EFB4D58E61F5A0AC61 /* Cocoa.framework */; };
+		B26EF3700C37DBD1CD25B492899AE1D7 /* Emitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A07090473743D609F9B13E5221E09D9 /* Emitter.swift */; };
+		B3E41F9A93C3F7B5BDF08A8E90C54041 /* Node.Scalar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA33B1699904537A864213FA3622847A /* Node.Scalar.swift */; };
+		BC1789C71AE22C089B8FCE8C57AE9C6D /* api.c in Sources */ = {isa = PBXBuildFile; fileRef = 47FDC68381A65D91704B48B6E1B98EEA /* api.c */; };
+		C1C8790BEB64D397D047C8AA262E327A /* Yams-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E07D985209DFB0B2474AF88ED33ABE3A /* Yams-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C61880893ABFBCF86173440D8620C863 /* emitter.c in Sources */ = {isa = PBXBuildFile; fileRef = B690F39A7583818228B0026FE04FEF65 /* emitter.c */; };
+		CB4492BFB03F7B802795D89AAB8687C3 /* CYaml.h in Headers */ = {isa = PBXBuildFile; fileRef = F50CAC136EAAB5DF38F89C24047247AD /* CYaml.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CDF8EA43FEB4CF1F458B34C6672C42BD /* writer.c in Sources */ = {isa = PBXBuildFile; fileRef = 049200A78BD44BBB4C33375F2E2EDB49 /* writer.c */; };
+		CFCAE8CAEAAEE309E4AF5C57F6511E9A /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE17D4EEE03BA3CC787AAF5DA363FBC4 /* Tag.swift */; };
+		D1EE6B2FDC9A65D099020917FA9AC47E /* Mark.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94BA1DBDC31A868F86F62F0258DCAAC /* Mark.swift */; };
+		DC1F235711B9623435F85BD1CF4909A5 /* Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334D2880FDC5959C1599EBEE00EBA6C7 /* Encoder.swift */; };
+		E3EFE201B9BB9DD3E2DE1E70F31D8A3A /* Yams-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2061C929CD43B9CFAA21977AAED47A5C /* Yams-dummy.m */; };
+		E55EAE8CFFC1DDEF5CC54077F680D48D /* shim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E9458B30A2D49C369F8E105440D963 /* shim.swift */; };
+		F62D51E049C89E78E8FDC9A4A30D75B5 /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A69B95B4E82DCF85789E2B23A11B4E /* Decoder.swift */; };
+		FCFC510E388DB925BC50A119EF70884F /* parser.c in Sources */ = {isa = PBXBuildFile; fileRef = 9BF07F21E97E76C3283CDAFAF6683446 /* parser.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		02A69B95B4E82DCF85789E2B23A11B4E /* Decoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Decoder.swift; path = Sources/Yams/Decoder.swift; sourceTree = "<group>"; };
+		047715FE0FA1CB1FC8E591F9744DB953 /* Node.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Node.swift; path = Sources/Yams/Node.swift; sourceTree = "<group>"; };
+		049200A78BD44BBB4C33375F2E2EDB49 /* writer.c */ = {isa = PBXFileReference; includeInIndex = 1; name = writer.c; path = Sources/CYaml/src/writer.c; sourceTree = "<group>"; };
+		0714728DE9F442F9DD984BDE49E4CC89 /* Yams-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Yams-Info.plist"; sourceTree = "<group>"; };
+		2061C929CD43B9CFAA21977AAED47A5C /* Yams-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Yams-dummy.m"; sourceTree = "<group>"; };
+		25C3FA7601842C4251F1F89752439CD9 /* Yams-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Yams-prefix.pch"; sourceTree = "<group>"; };
+		26333BC2ED90E7CB0BA54AC999E3D2B3 /* Yams.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Yams.xcconfig; sourceTree = "<group>"; };
+		298D96CCADD392E17BE64464F12043C9 /* Yams.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Yams.framework; path = Yams.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		334D2880FDC5959C1599EBEE00EBA6C7 /* Encoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Encoder.swift; path = Sources/Yams/Encoder.swift; sourceTree = "<group>"; };
+		3407890D8D29CC4DF4B60AAD32190602 /* Yams.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Yams.modulemap; sourceTree = "<group>"; };
+		41E9458B30A2D49C369F8E105440D963 /* shim.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = shim.swift; path = Sources/Yams/shim.swift; sourceTree = "<group>"; };
+		47FDC68381A65D91704B48B6E1B98EEA /* api.c */ = {isa = PBXFileReference; includeInIndex = 1; name = api.c; path = Sources/CYaml/src/api.c; sourceTree = "<group>"; };
+		637983B3AA54660C79031369AF110ED9 /* Representer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Representer.swift; path = Sources/Yams/Representer.swift; sourceTree = "<group>"; };
+		70875103C31419EA32ADF9989C37A54F /* Yams.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Yams.h; path = Sources/Yams/Yams.h; sourceTree = "<group>"; };
+		71811A7C4EA77C72C7721ACBF02918D1 /* Resolver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Resolver.swift; path = Sources/Yams/Resolver.swift; sourceTree = "<group>"; };
+		73AA222A97A609C4796307067DCD2465 /* YamlError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YamlError.swift; path = Sources/Yams/YamlError.swift; sourceTree = "<group>"; };
+		783595E1150E02DB2499BFFADF8F892D /* Parser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Parser.swift; path = Sources/Yams/Parser.swift; sourceTree = "<group>"; };
+		7A07090473743D609F9B13E5221E09D9 /* Emitter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Emitter.swift; path = Sources/Yams/Emitter.swift; sourceTree = "<group>"; };
+		9534D4AC6D0E25EFB4D58E61F5A0AC61 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		9BF07F21E97E76C3283CDAFAF6683446 /* parser.c */ = {isa = PBXFileReference; includeInIndex = 1; name = parser.c; path = Sources/CYaml/src/parser.c; sourceTree = "<group>"; };
+		9EC1C42EDD791BEB98297712F719ED40 /* Node.Mapping.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Node.Mapping.swift; path = Sources/Yams/Node.Mapping.swift; sourceTree = "<group>"; };
+		B61AA40719E55687433EDE5D0BA363F0 /* reader.c */ = {isa = PBXFileReference; includeInIndex = 1; name = reader.c; path = Sources/CYaml/src/reader.c; sourceTree = "<group>"; };
+		B690F39A7583818228B0026FE04FEF65 /* emitter.c */ = {isa = PBXFileReference; includeInIndex = 1; name = emitter.c; path = Sources/CYaml/src/emitter.c; sourceTree = "<group>"; };
+		B9D70DFD4C0F0E0D63B0ECBBB806E10A /* scanner.c */ = {isa = PBXFileReference; includeInIndex = 1; name = scanner.c; path = Sources/CYaml/src/scanner.c; sourceTree = "<group>"; };
+		BA33B1699904537A864213FA3622847A /* Node.Scalar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Node.Scalar.swift; path = Sources/Yams/Node.Scalar.swift; sourceTree = "<group>"; };
+		D97FE6C951C988B5E5E0401A973EF659 /* yaml_private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = yaml_private.h; path = Sources/CYaml/src/yaml_private.h; sourceTree = "<group>"; };
+		DE17D4EEE03BA3CC787AAF5DA363FBC4 /* Tag.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Tag.swift; path = Sources/Yams/Tag.swift; sourceTree = "<group>"; };
+		DFA13A453E5BF0FD2049628F87331256 /* yaml.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = yaml.h; path = Sources/CYaml/include/yaml.h; sourceTree = "<group>"; };
+		E07D985209DFB0B2474AF88ED33ABE3A /* Yams-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Yams-umbrella.h"; sourceTree = "<group>"; };
+		E7F7D6424B9191612A37D319EC4AF4DA /* String+Yams.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Yams.swift"; path = "Sources/Yams/String+Yams.swift"; sourceTree = "<group>"; };
+		EBB264C68C0DC6B5843FCF23F6D32E3D /* Node.Sequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Node.Sequence.swift; path = Sources/Yams/Node.Sequence.swift; sourceTree = "<group>"; };
+		F50CAC136EAAB5DF38F89C24047247AD /* CYaml.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CYaml.h; path = Sources/CYaml/include/CYaml.h; sourceTree = "<group>"; };
+		F56ED6D1986EC19067FD140A35E92A56 /* Constructor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constructor.swift; path = Sources/Yams/Constructor.swift; sourceTree = "<group>"; };
+		F94BA1DBDC31A868F86F62F0258DCAAC /* Mark.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mark.swift; path = Sources/Yams/Mark.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8EDFB3A5FECB86903BCF0D3C368191E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF24493CB602373846F4580D3555598C /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C653B3F49615D5CF26A26F719790B96 = {
+			isa = PBXGroup;
+			children = (
+				2C709219F61FB7D2E90083EFC095A04F /* Frameworks */,
+				F549D8589E2A55655A23BC798E996CD6 /* Products */,
+				E44F6B02591D4ACD032CB38589E4ECA1 /* Yams */,
+			);
+			sourceTree = "<group>";
+		};
+		2C709219F61FB7D2E90083EFC095A04F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				876C8BF0F181DB82BF2A6989EE09D68E /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		876C8BF0F181DB82BF2A6989EE09D68E /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				9534D4AC6D0E25EFB4D58E61F5A0AC61 /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		CDDECF0EE3B2CA838AAEF9EBC5FA6C2B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3407890D8D29CC4DF4B60AAD32190602 /* Yams.modulemap */,
+				26333BC2ED90E7CB0BA54AC999E3D2B3 /* Yams.xcconfig */,
+				2061C929CD43B9CFAA21977AAED47A5C /* Yams-dummy.m */,
+				0714728DE9F442F9DD984BDE49E4CC89 /* Yams-Info.plist */,
+				25C3FA7601842C4251F1F89752439CD9 /* Yams-prefix.pch */,
+				E07D985209DFB0B2474AF88ED33ABE3A /* Yams-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Yams";
+			sourceTree = "<group>";
+		};
+		E44F6B02591D4ACD032CB38589E4ECA1 /* Yams */ = {
+			isa = PBXGroup;
+			children = (
+				47FDC68381A65D91704B48B6E1B98EEA /* api.c */,
+				F56ED6D1986EC19067FD140A35E92A56 /* Constructor.swift */,
+				F50CAC136EAAB5DF38F89C24047247AD /* CYaml.h */,
+				02A69B95B4E82DCF85789E2B23A11B4E /* Decoder.swift */,
+				B690F39A7583818228B0026FE04FEF65 /* emitter.c */,
+				7A07090473743D609F9B13E5221E09D9 /* Emitter.swift */,
+				334D2880FDC5959C1599EBEE00EBA6C7 /* Encoder.swift */,
+				F94BA1DBDC31A868F86F62F0258DCAAC /* Mark.swift */,
+				047715FE0FA1CB1FC8E591F9744DB953 /* Node.swift */,
+				9EC1C42EDD791BEB98297712F719ED40 /* Node.Mapping.swift */,
+				BA33B1699904537A864213FA3622847A /* Node.Scalar.swift */,
+				EBB264C68C0DC6B5843FCF23F6D32E3D /* Node.Sequence.swift */,
+				9BF07F21E97E76C3283CDAFAF6683446 /* parser.c */,
+				783595E1150E02DB2499BFFADF8F892D /* Parser.swift */,
+				B61AA40719E55687433EDE5D0BA363F0 /* reader.c */,
+				637983B3AA54660C79031369AF110ED9 /* Representer.swift */,
+				71811A7C4EA77C72C7721ACBF02918D1 /* Resolver.swift */,
+				B9D70DFD4C0F0E0D63B0ECBBB806E10A /* scanner.c */,
+				41E9458B30A2D49C369F8E105440D963 /* shim.swift */,
+				E7F7D6424B9191612A37D319EC4AF4DA /* String+Yams.swift */,
+				DE17D4EEE03BA3CC787AAF5DA363FBC4 /* Tag.swift */,
+				049200A78BD44BBB4C33375F2E2EDB49 /* writer.c */,
+				DFA13A453E5BF0FD2049628F87331256 /* yaml.h */,
+				D97FE6C951C988B5E5E0401A973EF659 /* yaml_private.h */,
+				73AA222A97A609C4796307067DCD2465 /* YamlError.swift */,
+				70875103C31419EA32ADF9989C37A54F /* Yams.h */,
+				CDDECF0EE3B2CA838AAEF9EBC5FA6C2B /* Support Files */,
+			);
+			name = Yams;
+			path = Yams;
+			sourceTree = "<group>";
+		};
+		F549D8589E2A55655A23BC798E996CD6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				298D96CCADD392E17BE64464F12043C9 /* Yams.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		26E1E0AE32F5B4554E4F2E248091B4DE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB4492BFB03F7B802795D89AAB8687C3 /* CYaml.h in Headers */,
+				2BF147A46E2154FF72E77D9EFF634EDA /* yaml.h in Headers */,
+				56088FADCC6402C0B2E7D4EE16A1DA77 /* yaml_private.h in Headers */,
+				C1C8790BEB64D397D047C8AA262E327A /* Yams-umbrella.h in Headers */,
+				3E30191F911CA312E65EB0A7823F711C /* Yams.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1A02B50228A8EE851568FFB6A9533223 /* Yams */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B48A04B0C4D66CF3359639E1F1101D7F /* Build configuration list for PBXNativeTarget "Yams" */;
+			buildPhases = (
+				26E1E0AE32F5B4554E4F2E248091B4DE /* Headers */,
+				5B3949DE9D925F9FCAB5DFDA308558D7 /* Sources */,
+				8EDFB3A5FECB86903BCF0D3C368191E2 /* Frameworks */,
+				32F4159BC012E9754FA117702693EF0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Yams;
+			productName = Yams;
+			productReference = 298D96CCADD392E17BE64464F12043C9 /* Yams.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF5D82B2269DF6B45C6CCB78522E34B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 5DA92E98CCD4394776BDE18903A16913 /* Build configuration list for PBXProject "Yams" */;
+			compatibilityVersion = "Xcode 6.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1C653B3F49615D5CF26A26F719790B96;
+			productRefGroup = F549D8589E2A55655A23BC798E996CD6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A02B50228A8EE851568FFB6A9533223 /* Yams */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32F4159BC012E9754FA117702693EF0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B3949DE9D925F9FCAB5DFDA308558D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC1789C71AE22C089B8FCE8C57AE9C6D /* api.c in Sources */,
+				A773468ABB0B7B3061EF70E854EC33DE /* Constructor.swift in Sources */,
+				F62D51E049C89E78E8FDC9A4A30D75B5 /* Decoder.swift in Sources */,
+				C61880893ABFBCF86173440D8620C863 /* emitter.c in Sources */,
+				B26EF3700C37DBD1CD25B492899AE1D7 /* Emitter.swift in Sources */,
+				DC1F235711B9623435F85BD1CF4909A5 /* Encoder.swift in Sources */,
+				D1EE6B2FDC9A65D099020917FA9AC47E /* Mark.swift in Sources */,
+				86605A79EA511DD630BB00261967BEBA /* Node.Mapping.swift in Sources */,
+				B3E41F9A93C3F7B5BDF08A8E90C54041 /* Node.Scalar.swift in Sources */,
+				5A0387211FCFF9664A7B8479F28DE9AB /* Node.Sequence.swift in Sources */,
+				AF0CF5EEE59FD66EF93E9BC71F4059AB /* Node.swift in Sources */,
+				FCFC510E388DB925BC50A119EF70884F /* parser.c in Sources */,
+				56EFAE26CDB22BA9C22EF657FF936CE8 /* Parser.swift in Sources */,
+				27F714D838B1E5D49839FFE3D3E1DF2D /* reader.c in Sources */,
+				5D3A2C265F2A8F41950B4211E8BDB507 /* Representer.swift in Sources */,
+				4A198A4E10B1A5CCB6019145945151D1 /* Resolver.swift in Sources */,
+				10D9A27A6FBB587A5BA86A8DDA1DC612 /* scanner.c in Sources */,
+				E55EAE8CFFC1DDEF5CC54077F680D48D /* shim.swift in Sources */,
+				932A2A30D57A74DE61E0F2461C598DC5 /* String+Yams.swift in Sources */,
+				CFCAE8CAEAAEE309E4AF5C57F6511E9A /* Tag.swift in Sources */,
+				CDF8EA43FEB4CF1F458B34C6672C42BD /* writer.c in Sources */,
+				997163AAD5EC3067FD5A2CE8B1D0BC2E /* YamlError.swift in Sources */,
+				E3EFE201B9BB9DD3E2DE1E70F31D8A3A /* Yams-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1523DA7F6BAAC662A36F074136811B6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		51DA9D15367D23759F32F93F019E5A53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26333BC2ED90E7CB0BA54AC999E3D2B3 /* Yams.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/Yams/Yams-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Yams/Yams-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/Yams/Yams.modulemap";
+				PRODUCT_MODULE_NAME = Yams;
+				PRODUCT_NAME = Yams;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		53C1BD1AB3F1CC39119C35ADBF2AEEDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26333BC2ED90E7CB0BA54AC999E3D2B3 /* Yams.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/Yams/Yams-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Yams/Yams-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/Yams/Yams.modulemap";
+				PRODUCT_MODULE_NAME = Yams;
+				PRODUCT_NAME = Yams;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A2668558DC1406F19FD9A2532B97E1FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5DA92E98CCD4394776BDE18903A16913 /* Build configuration list for PBXProject "Yams" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2668558DC1406F19FD9A2532B97E1FD /* Debug */,
+				1523DA7F6BAAC662A36F074136811B6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B48A04B0C4D66CF3359639E1F1101D7F /* Build configuration list for PBXNativeTarget "Yams" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51DA9D15367D23759F32F93F019E5A53 /* Debug */,
+				53C1BD1AB3F1CC39119C35ADBF2AEEDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DF5D82B2269DF6B45C6CCB78522E34B2 /* Project object */;
+}

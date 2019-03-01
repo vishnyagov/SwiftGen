@@ -1,0 +1,416 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 47;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02EB94B139B1CF0EA6A2D512CDE1654C /* Kanna-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF92A2AB41ED7AC389F54EB652EFADA /* Kanna-dummy.m */; };
+		166B6E4EFE3E0C4F7566A1A5FFD8E62B /* CSS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8894769FC204BF47164468EB38987342 /* CSS.swift */; };
+		3CCDC0B247EF8947F5AFE4D565A9739B /* libxmlHTMLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA47506D952D37A393540267576CE62 /* libxmlHTMLNode.swift */; };
+		43CD491629FBFEF2FDCE8495721CD2EC /* Kanna.h in Headers */ = {isa = PBXBuildFile; fileRef = FB6B0933B3195843FC49A46343E78F60 /* Kanna.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73748D33F89B5D05185546B1E9483DCE /* Kanna-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 40830680F72EDB484AABA8184F8445BB /* Kanna-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7544EDA294C73741AFEBC87F1A62A361 /* libxmlParserOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1004364AC5E9FC18C63FF866D788BD /* libxmlParserOption.swift */; };
+		7763A23364542B3554DBEBE356DA76BF /* Kanna.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC298F4BC33F6AE413C5D12A5C26FAA /* Kanna.swift */; };
+		7B2F82618EB5AF4BA5249B4506BD5700 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E50EFB1962D1BDD94C1B2DBD9DA4F1D /* Cocoa.framework */; };
+		9AAB0EB806A8D3F3C9DA3714A31D48F8 /* libxmlHTMLDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AEA22E4784D0625DAD7D889B8B2F74 /* libxmlHTMLDocument.swift */; };
+		9B2D6C4414572700039F25431B6204E0 /* Deprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445B0798164743912057CD2D217F450C /* Deprecated.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		158047AC572C045C400E2C25DE4ABD5C /* Kanna-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Kanna-Info.plist"; sourceTree = "<group>"; };
+		1BF92A2AB41ED7AC389F54EB652EFADA /* Kanna-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Kanna-dummy.m"; sourceTree = "<group>"; };
+		40830680F72EDB484AABA8184F8445BB /* Kanna-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kanna-umbrella.h"; sourceTree = "<group>"; };
+		445B0798164743912057CD2D217F450C /* Deprecated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deprecated.swift; path = Sources/Kanna/Deprecated.swift; sourceTree = "<group>"; };
+		4E50EFB1962D1BDD94C1B2DBD9DA4F1D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		537BDD90579466C894BB083A32929BDD /* Kanna.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Kanna.xcconfig; sourceTree = "<group>"; };
+		75BDE597E96A98F513F2A9223087FAC0 /* Kanna-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kanna-prefix.pch"; sourceTree = "<group>"; };
+		8894769FC204BF47164468EB38987342 /* CSS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSS.swift; path = Sources/Kanna/CSS.swift; sourceTree = "<group>"; };
+		89AEA22E4784D0625DAD7D889B8B2F74 /* libxmlHTMLDocument.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = libxmlHTMLDocument.swift; path = Sources/Kanna/libxmlHTMLDocument.swift; sourceTree = "<group>"; };
+		8A8607A16EE85CC9910D967BED10B7B6 /* Kanna.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Kanna.modulemap; sourceTree = "<group>"; };
+		9CA47506D952D37A393540267576CE62 /* libxmlHTMLNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = libxmlHTMLNode.swift; path = Sources/Kanna/libxmlHTMLNode.swift; sourceTree = "<group>"; };
+		9D31AE2D3A83E55F5EAA8291189D4927 /* Kanna.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Kanna.framework; path = Kanna.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEC298F4BC33F6AE413C5D12A5C26FAA /* Kanna.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Kanna.swift; path = Sources/Kanna/Kanna.swift; sourceTree = "<group>"; };
+		EB1004364AC5E9FC18C63FF866D788BD /* libxmlParserOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = libxmlParserOption.swift; path = Sources/Kanna/libxmlParserOption.swift; sourceTree = "<group>"; };
+		FB6B0933B3195843FC49A46343E78F60 /* Kanna.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Kanna.h; path = Sources/Kanna/Kanna.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B0CA0624D0EBD271C6EDEA9A47BE0AE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B2F82618EB5AF4BA5249B4506BD5700 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0541B0DD53E6C780C7523D554800AB5B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D31AE2D3A83E55F5EAA8291189D4927 /* Kanna.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		31412FCE02DEEFDEE49DC9AA32CF8690 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A8607A16EE85CC9910D967BED10B7B6 /* Kanna.modulemap */,
+				537BDD90579466C894BB083A32929BDD /* Kanna.xcconfig */,
+				1BF92A2AB41ED7AC389F54EB652EFADA /* Kanna-dummy.m */,
+				158047AC572C045C400E2C25DE4ABD5C /* Kanna-Info.plist */,
+				75BDE597E96A98F513F2A9223087FAC0 /* Kanna-prefix.pch */,
+				40830680F72EDB484AABA8184F8445BB /* Kanna-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Kanna";
+			sourceTree = "<group>";
+		};
+		3E53BE9F783C14985DDD4D17CA045BBB = {
+			isa = PBXGroup;
+			children = (
+				CFF5893CE040BB26D119AAC993211A33 /* Frameworks */,
+				93A6C39F7A96BF9E8860343A80AAF9BA /* Kanna */,
+				0541B0DD53E6C780C7523D554800AB5B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		93A6C39F7A96BF9E8860343A80AAF9BA /* Kanna */ = {
+			isa = PBXGroup;
+			children = (
+				8894769FC204BF47164468EB38987342 /* CSS.swift */,
+				445B0798164743912057CD2D217F450C /* Deprecated.swift */,
+				FB6B0933B3195843FC49A46343E78F60 /* Kanna.h */,
+				BEC298F4BC33F6AE413C5D12A5C26FAA /* Kanna.swift */,
+				89AEA22E4784D0625DAD7D889B8B2F74 /* libxmlHTMLDocument.swift */,
+				9CA47506D952D37A393540267576CE62 /* libxmlHTMLNode.swift */,
+				EB1004364AC5E9FC18C63FF866D788BD /* libxmlParserOption.swift */,
+				31412FCE02DEEFDEE49DC9AA32CF8690 /* Support Files */,
+			);
+			name = Kanna;
+			path = Kanna;
+			sourceTree = "<group>";
+		};
+		A0898FED1615A236B3E9E735D8066A1E /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				4E50EFB1962D1BDD94C1B2DBD9DA4F1D /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		CFF5893CE040BB26D119AAC993211A33 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0898FED1615A236B3E9E735D8066A1E /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		540B59ADB67D03BF39C651926902A9D0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73748D33F89B5D05185546B1E9483DCE /* Kanna-umbrella.h in Headers */,
+				43CD491629FBFEF2FDCE8495721CD2EC /* Kanna.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		198F9A3E9BE876E12EA9A48C2A5867A5 /* Kanna */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 525CDA8E6C9A061ED0B6B0C36EF9CFF4 /* Build configuration list for PBXNativeTarget "Kanna" */;
+			buildPhases = (
+				540B59ADB67D03BF39C651926902A9D0 /* Headers */,
+				9DF4DE22861973329DEF5AA9DFF6BE1F /* Sources */,
+				B0CA0624D0EBD271C6EDEA9A47BE0AE7 /* Frameworks */,
+				6F2BA7FC04A2BEDC094D8E6A1FACECE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kanna;
+			productName = Kanna;
+			productReference = 9D31AE2D3A83E55F5EAA8291189D4927 /* Kanna.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CAD579804ACDBB4B79AA0D381B1FCAD4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 051C1159E438133B4098DC7900DA7DFE /* Build configuration list for PBXProject "Kanna" */;
+			compatibilityVersion = "Xcode 6.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3E53BE9F783C14985DDD4D17CA045BBB;
+			productRefGroup = 0541B0DD53E6C780C7523D554800AB5B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				198F9A3E9BE876E12EA9A48C2A5867A5 /* Kanna */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6F2BA7FC04A2BEDC094D8E6A1FACECE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9DF4DE22861973329DEF5AA9DFF6BE1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				166B6E4EFE3E0C4F7566A1A5FFD8E62B /* CSS.swift in Sources */,
+				9B2D6C4414572700039F25431B6204E0 /* Deprecated.swift in Sources */,
+				02EB94B139B1CF0EA6A2D512CDE1654C /* Kanna-dummy.m in Sources */,
+				7763A23364542B3554DBEBE356DA76BF /* Kanna.swift in Sources */,
+				9AAB0EB806A8D3F3C9DA3714A31D48F8 /* libxmlHTMLDocument.swift in Sources */,
+				3CCDC0B247EF8947F5AFE4D565A9739B /* libxmlHTMLNode.swift in Sources */,
+				7544EDA294C73741AFEBC87F1A62A361 /* libxmlParserOption.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		16CF34F6EFABB8DDC69B231C967C10C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		2C49F67A342A118D27323ACD8B93B24F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 537BDD90579466C894BB083A32929BDD /* Kanna.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/Kanna/Kanna-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Kanna/Kanna-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/Kanna/Kanna.modulemap";
+				PRODUCT_MODULE_NAME = Kanna;
+				PRODUCT_NAME = Kanna;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DA6D1D201C9314E1E7F21FC15F525362 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		FD2BACF9053E96803E9D7C5000B39AA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 537BDD90579466C894BB083A32929BDD /* Kanna.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/Kanna/Kanna-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Kanna/Kanna-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/Kanna/Kanna.modulemap";
+				PRODUCT_MODULE_NAME = Kanna;
+				PRODUCT_NAME = Kanna;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		051C1159E438133B4098DC7900DA7DFE /* Build configuration list for PBXProject "Kanna" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16CF34F6EFABB8DDC69B231C967C10C1 /* Debug */,
+				DA6D1D201C9314E1E7F21FC15F525362 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		525CDA8E6C9A061ED0B6B0C36EF9CFF4 /* Build configuration list for PBXNativeTarget "Kanna" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C49F67A342A118D27323ACD8B93B24F /* Debug */,
+				FD2BACF9053E96803E9D7C5000B39AA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CAD579804ACDBB4B79AA0D381B1FCAD4 /* Project object */;
+}
