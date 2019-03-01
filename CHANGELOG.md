@@ -83,6 +83,9 @@
 * Update to SwiftLint 0.31.0 and enable some extra SwiftLint rules.  
   [David Jennes](https://github.com/djbe)
   [#617](https://github.com/SwiftGen/SwiftGen/pull/617)
+* Updated to CocoaPods 1.7.0 (Beta 1).  
+  [David Jennes](https://github.com/djbe)
+  [#619](https://github.com/SwiftGen/SwiftGen/pull/619)
 
 ## 6.1.0
 
