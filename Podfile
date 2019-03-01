@@ -1,6 +1,8 @@
 platform :osx, '10.9'
 use_frameworks!
 
+source 'https://cdn.jsdelivr.net/cocoa/'
+
 raise 'Please use bundle exec to run the pod command' unless defined?(Bundler)
 
 def common_pods
