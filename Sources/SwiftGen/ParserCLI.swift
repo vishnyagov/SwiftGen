@@ -37,6 +37,12 @@ let allParserCommands: [ParserCLI] = [
     pathDescription: "Colors.txt|.clr|.xml|.json file(s) to parse."
   ),
   .init(
+    parserType: Styles.Parser.self,
+    name: "styles",
+    description: "generate code for styles android xml",
+    pathDescription: "Colors.xml file(s) to parse."
+  ),
+  .init(
     parserType: CoreData.Parser.self,
     name: "coredata",
     description: "generate code for your Core Data models",
