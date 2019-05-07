@@ -21,7 +21,7 @@ extension Styles {
 
     private enum XML {
       static let styleXPath = "/resources/style"
-      static let itemXPath = "/item"
+      static let itemXPath = "item"
       static let nameAttribute = "name"
       static let textSizeAttribute = "textSize"
       static let fontFamilyAttribute = "fontFamily"
