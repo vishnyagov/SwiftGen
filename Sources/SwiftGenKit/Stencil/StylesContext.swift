@@ -20,8 +20,7 @@ extension Styles.Parser {
       .map { styleKit in
         let styles = styleKit.styles
           .sorted { $0.key < $1.key }
-          .map(map(styleKit:value:))
-        
+          .map(map(name:styleKit:))
         return [
           "name": styleKit.name,
           "styles": styles
@@ -33,10 +32,13 @@ extension Styles.Parser {
     ]
   }
   
-  private func map(styleKit name: String, value: String) -> [String: String] {
+  private func map(name: String, styleKit: Styles.StyleKit) -> [String: String] {
     return [
       "name": name,
-      "value": value
+      "textSize": styleKit.textSize ?? "",
+      "textColor": styleKit.textColor ?? "",
+      "textStyle": styleKit.textStyle ?? "",
+      "fontFamily": styleKit.fontFamily ?? ""
     ]
   }
 }
